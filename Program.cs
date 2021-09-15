@@ -7,12 +7,18 @@ namespace DataStructuresDemo
         static void Main(string[] args)
         {
             Linkedlist list = new Linkedlist();
-            list.InsertLast(56);
-            list.InsertLast(30);
-            list.InsertLast(70);
+
+	    //uc1 insert last
+            //list.InsertLast(56);
+            //list.InsertLast(30);
+            //list.InsertLast(70);
+            //list.Dispaly_list();
+
+	    //uc2 Insertfront
+            list.Insertfront(70);
+            list.Insertfront(30);
+            list.Insertfront(56);
             list.Dispaly_list();
-            // Console.WriteLine("inserted into list " + insertlist);
-           // Console.WriteLine("inserted into list " +list.head.data);
         }
     }
 }

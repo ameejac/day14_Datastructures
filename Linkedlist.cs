@@ -24,6 +24,22 @@ namespace DataStructuresDemo
             }
             Console.WriteLine("inserted into list " + new_node.data);
         }
+	
+	/* add the element on front */
+        public void Insertfront(int new_data)
+        {
+            Node new_node = new Node(new_data); //it will create object and initialize the data
+            if (this.head == null)
+            {
+                this.head = new_node;    
+            }
+            else
+            {
+                new_node.next = this.head;   // new_node->next will have head
+                this.head = new_node;        // head now having the new_node
+            }
+            Console.WriteLine("inserted into list " + new_node.data);
+        }
 
        
         public Node GetLastNode()
