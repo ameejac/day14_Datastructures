@@ -15,10 +15,19 @@ namespace DataStructuresDemo
             //list.Dispaly_list();
 
 	    //uc2 Insertfront
+	    /*
             list.Insertfront(70);
             list.Insertfront(30);
             list.Insertfront(56);
             list.Dispaly_list();
+	    */
+
+	    //uc3 Insertappending
+            list.Insertappend(30);
+            list.Insertappend(70);
+            list.Insertappend(56);
+            list.Dispaly_list();
+
         }
     }
 }

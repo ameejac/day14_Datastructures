@@ -51,6 +51,24 @@ namespace DataStructuresDemo
             }
             return temp;
         }
+        // add the element on appending
+
+        public void Insertappend(int new_data)
+        {
+            Node new_node = new Node(new_data);
+            if (this.head == null)
+            {
+                this.head = new_node;
+            }
+            else
+            {
+                Node AppendNode = GetLastNode(); 
+                AppendNode.next = new_node;
+                
+            }
+            Console.WriteLine("Appnded to list  " + new_node.data);
+        }
+
 
         public void Dispaly_list()
         {
