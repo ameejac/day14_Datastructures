@@ -68,8 +68,35 @@ namespace DataStructuresDemo
             }
             Console.WriteLine("Appnded to list  " + new_node.data);
         }
+	//uc4 insert in between 30 to 56
+        public void Insertbetween(int new_data, int data)
+        {
+            //int data = 30;
+            Node new_node = new Node(new_data);
 
+            if (head.data == data)
+            {
+                new_node.next = head.next;
+                head.next = new_node;
+            }
+            else
+            {
+                Node temp;
+                temp = head;
+                while(temp.next != null)
+                {
+                    if(temp.data == data)
+                    {
+                        new_node.next = temp.next;
+                        temp.next = new_node;
+                        break;
+                    }
+                    temp = temp.next;
+                }
 
+            }
+
+        }
         public void Dispaly_list()
         {
             if (this.head == null)
