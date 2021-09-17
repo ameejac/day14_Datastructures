@@ -69,6 +69,32 @@ namespace DataStructuresDemo
             Console.WriteLine("Appnded to list  " + new_node.data);
         }
 
+        //uc5 deleting 1st node
+        public  Node Deletefirstnode()
+        {
+            Node temp;
+            if (this.head == null)
+            {
+                return null;
+            }
+            else
+            {
+                temp = this.head;   // head copying to temp
+                this.head = temp.next; 
+                temp.next = null;
+            }
+            return temp;
+        }
+        public Node GetLastNode()
+        {
+            Node temp = this.head;
+            while (temp.next != null)
+            {
+                temp = temp.next;
+            }
+            return temp;
+        }
+
 
         public void Dispaly_list()
         {

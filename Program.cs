@@ -28,6 +28,16 @@ namespace DataStructuresDemo
             list.Insertappend(56);
             list.Dispaly_list();
 
+	     //uc4 Insert in between 30 to 56
+            //list.Insertbetween(35, 30);
+            //Console.WriteLine("after inserting between \n");
+            //list.Dispaly_list();
+
+             //uc5 delete first node
+            Node deleted_node = list.Deletefirstnode();
+            Console.WriteLine("deleting firstnode number:" +deleted_node.data);
+            list.Dispaly_list();
+
         }
     }
 }
