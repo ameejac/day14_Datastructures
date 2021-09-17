@@ -113,6 +113,48 @@ namespace DataStructuresDemo
             return temp;
         }
 
+         //uc6 deleting the last node
+        public void Insertlist(int new_data)
+        {
+            Node new_node = new Node(new_data);
+            if (this.head == null)
+            {
+                this.head = new_node;
+            }
+            else
+            {
+                new_node.next = this.head;
+                this.head = new_node;
+            }
+        }
+        public Node Deletelastnode()
+        {
+
+            Node temp, temp2;
+
+            if (this.head == null)
+            {
+                return null;
+            }
+            if (this.head.next == null)
+            {
+                return head;
+            }
+            else
+            {
+                temp = head;    //head is assigned to temp
+                while (temp.next.next != null)
+                {
+                    temp = temp.next;
+                }
+
+                temp2 = temp.next;
+                temp.next = null;
+                return temp2;
+            }
+        }
+      
+    
         public Node GetLastNode()
         {
             Node temp = this.head;

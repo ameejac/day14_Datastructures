@@ -23,9 +23,9 @@ namespace DataStructuresDemo
 	    */
 
 	    //uc3 Insertappending
-            list.Insertappend(30);
-            list.Insertappend(70);
-            list.Insertappend(56);
+            //list.Insertappend(30);
+            //list.Insertappend(70);
+            //list.Insertappend(56);
             //list.Dispaly_list();
       
             //uc4 Insert in between 30 to 56
@@ -33,10 +33,17 @@ namespace DataStructuresDemo
             //Console.WriteLine("after inserting between\n");
             //list.Dispaly_list();
 
-             //uc5 delete first node
-            Node deleted_node = list.Deletefirstnode();
-            Console.WriteLine("deleting firstnode number:" +deleted_node.data);
+            //uc5 delete first node
+            //Node deleted_node = list.Deletefirstnode();
+            //Console.WriteLine("deleting firstnode number:" +deleted_node.data);
+            //list.Dispaly_list();
+	    //uc6 delete last node
+            list.Insertlist(70);
+            list.Insertlist(30);
+            list.Insertlist(56);
             list.Dispaly_list();
+            Node deleted_node = list.Deletelastnode();
+            Console.WriteLine("deleting lastnode number:" +deleted_node.data); 
 
         }
     }
