@@ -38,13 +38,24 @@ namespace DataStructuresDemo
             //Console.WriteLine("deleting firstnode number:" +deleted_node.data);
             //list.Dispaly_list();
 	    //uc6 delete last node
+            //list.Insertlist(70);
+            //list.Insertlist(30);
+            //list.Insertlist(56);
+            //list.Dispaly_list();
+            //Node deleted_node = list.Deletelastnode();
+            //Console.WriteLine("deleting lastnode number:" +deleted_node.data); 
+            
+	     //uc7 searching for perticular node
             list.Insertlist(70);
             list.Insertlist(30);
             list.Insertlist(56);
-            list.Dispaly_list();
-            Node deleted_node = list.Deletelastnode();
-            Console.WriteLine("deleting lastnode number:" +deleted_node.data); 
+            Node find = list.Search(20);
+            if (find != null)
+            {
+                Console.WriteLine("node found in main " + find.data);
+            }
 
+            list.Dispaly_list();
         }
     }
 }    

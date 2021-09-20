@@ -153,7 +153,23 @@ namespace DataStructuresDemo
                 return temp2;
             }
         }
-      
+        
+        //UC 7 serach for particular node
+        public Node Search(int value)
+        {
+            Node temp = this.head;
+            while (temp != null)
+            {
+                if (temp.data == value)
+                {
+                    Console.WriteLine("\nNode is present ");
+                    return temp;
+                }
+                temp = temp.next;
+            }
+            Console.WriteLine("Node not found");
+            return null;
+        }
     
         public Node GetLastNode()
         {
