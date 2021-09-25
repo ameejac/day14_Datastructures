@@ -39,3 +39,49 @@ namespace DataStructuresDemo
                 temp = temp.next;
             }
         }
+
+	   //uc2 dequeue the data
+
+        public Node Test()
+        {
+            Node temp;
+            temp = head;
+            if (head == null)
+            {
+                Console.WriteLine("queue is empty");
+                return null;
+            }
+
+            else if (head == tail)
+            {
+                temp = head;
+                head = tail = null;
+                return temp;
+            }
+            else
+            {
+                Console.WriteLine("queue is not empty");
+                temp = head;
+                head = head.next;
+                return temp;
+            }
+
+        }
+        public void Display()
+        {
+            Node temp = head;
+            if(temp == null)
+            {
+                Console.WriteLine("queue is empty");
+                return;
+            }
+
+            while(temp != null)
+            {
+                Console.WriteLine("elements on the queue:" + temp.data);
+                temp = temp.next;
+            }
+        }
+    }
+}
+

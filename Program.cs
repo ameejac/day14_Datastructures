@@ -71,11 +71,23 @@ namespace DataStructuresDemo
             //Console.WriteLine("peak value is:" + list.top.data);
 	    
 	     //uc1 create a queue
-            queue list = new queue();
+            //queue list = new queue();
+            //list.insert(56);
+            //list.insert(30);
+            //list.insert(70);
+            //list.Display();
+	    
+	    //uc2 dequeue
             list.insert(56);
             list.insert(30);
             list.insert(70);
             list.Display();
+
+            Node temp = list.Test();
+            Console.WriteLine("dequeue the data:" +temp.data );
+           
+            temp = list.Test();
+            Console.WriteLine("dequeue the data:" + temp.data);
 
 
         }

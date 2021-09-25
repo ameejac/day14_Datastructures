@@ -79,10 +79,11 @@ namespace DataStructuresDemo
                 return;
             }
             while (temp != null)
-            {
+           {                
                 Console.WriteLine("Value in the stack : " + temp.data);
                 temp = temp.next;
             }
         }
-    }
+
+    } 
 }
