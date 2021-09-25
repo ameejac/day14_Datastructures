@@ -57,11 +57,18 @@ namespace DataStructuresDemo
             //list.Dispaly_list();
 
 	    //uc1 create a stack
-            Stacks list = new Stacks();
-            list.push(70);
-            list.push(30);
-            list.push(56);
-	    list.Display();
+            //Stacks list = new Stacks();
+            //list.push(70);
+            //list.push(30);
+            //list.push(56);
+	    //list.Display();
+
+	    //uc2 pop,peak
+            list.Display();
+            list.peak();
+            list.pop();
+            list.empty();
+            Console.WriteLine("peak value is:" + list.top.data);
         }
     }
 }    
