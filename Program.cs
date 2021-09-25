@@ -64,11 +64,20 @@ namespace DataStructuresDemo
 	    //list.Display();
 
 	    //uc2 pop,peak
+            //list.Display();
+            //list.peak();
+            //list.pop();
+            //list.empty();
+            //Console.WriteLine("peak value is:" + list.top.data);
+	    
+	     //uc1 create a queue
+            queue list = new queue();
+            list.insert(56);
+            list.insert(30);
+            list.insert(70);
             list.Display();
-            list.peak();
-            list.pop();
-            list.empty();
-            Console.WriteLine("peak value is:" + list.top.data);
+
+
         }
     }
 }    
