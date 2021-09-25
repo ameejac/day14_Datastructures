@@ -56,7 +56,7 @@ namespace DataStructuresDemo
             //}
             //list.Dispaly_list();
 
-	    uc1 create a stack
+	    //uc1 create a stack
             Stacks list = new Stacks();
             list.push(70);
             list.push(30);
