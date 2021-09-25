@@ -46,16 +46,22 @@ namespace DataStructuresDemo
             //Console.WriteLine("deleting lastnode number:" +deleted_node.data); 
             
 	     //uc7 searching for perticular node
-            list.Insertlist(70);
-            list.Insertlist(30);
-            list.Insertlist(56);
-            Node find = list.Search(20);
-            if (find != null)
-            {
-                Console.WriteLine("node found in main " + find.data);
-            }
+            //list.Insertlist(70);
+            //list.Insertlist(30);
+            //list.Insertlist(56);
+            //Node find = list.Search(20);
+            //if (find != null)
+            //{
+            //Console.WriteLine("node found in main " + find.data);
+            //}
+            //list.Dispaly_list();
 
-            list.Dispaly_list();
+	    uc1 create a stack
+            Stacks list = new Stacks();
+            list.push(70);
+            list.push(30);
+            list.push(56);
+	    list.Display();
         }
     }
 }    
